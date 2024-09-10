@@ -264,7 +264,7 @@ const Profile = () => {
           <VCInfo>Occupation: {vc.vc.credentialSubject.occupation}</VCInfo>
         </VCContainer>
       ) : (
-        <VerifiableCredentialComponent did={did.uri} onVCCreated={handleVCCreated} />
+        <VerifiableCredentialComponent did={userAddress} />
       )}
       <ActionContainer>
         <ActionButton onClick={() => console.log('DID Document:', did.document)}>

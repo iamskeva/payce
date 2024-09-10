@@ -1,3 +1,5 @@
+import './polyfills';
+import './process'
 import React from 'react'
 import styled from 'styled-components'
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
@@ -5,7 +7,9 @@ import Home from './components/Home'
 import Send from './components/Send'
 import Receive from './components/Receive'
 import Profile from './components/Profile'
-import './process'
+
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
 
 const AppContainer = styled.div`
   max-width: 100%;
